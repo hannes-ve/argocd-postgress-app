@@ -1,0 +1,8 @@
+apiVersion: resources.teleport.dev/v5
+kind: Database
+metadata:
+  name: postgres
+  namespace: teleport
+spec:
+  protocol: postgres
+  uri: postgres://myuser:mypassword@postgres.postgres.svc.cluster.local:5432/mydb
